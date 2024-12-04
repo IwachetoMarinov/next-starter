@@ -1,0 +1,21 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": ["../*", "./../*"] // Adjust as necessary
+      }
+    ],
+    "no-unused-vars": "error",
+    "camelcase": [
+      "error",
+      {
+        "properties": "always",
+        "ignoreDestructuring": false,
+        "ignoreImports": false
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off"  // Disable the rule for "any" types
+  }
+}
